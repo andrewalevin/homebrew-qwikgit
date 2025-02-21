@@ -3,6 +3,8 @@
 SCRIPT_NAME="qwikgit"
 VERSION="DEV"  # <- This will be replaced by Homebrew at install time
 
+
+
 show_help() {
   cat <<EOF
 $SCRIPT_NAME - Git auto-commit and push with timestamp
@@ -39,6 +41,10 @@ commit_and_push() {
   git commit -m "$COMMIT_MESSAGE"
   git push
 }
+
+echo "🍉 Version: ";
+show_version;
+
 
 case "$1" in
   -h|--help) show_help; exit 0 ;;
