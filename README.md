@@ -1,4 +1,4 @@
-# Homebrew. Qwik Git 
+# 🍺 Homebrew. Qwik Git 
 homebrew-qwhawk
 
 
@@ -9,15 +9,15 @@ homebrew-qwhawk
 Get SHA256 Checksum for New Script Location
 
 ```bash
-curl -L https://raw.githubusercontent.com/andrewalevin/homebrew-qwhawk/main/scripts/qwhawk-git.sh | shasum -a 256
+curl -L https://raw.githubusercontent.com/andrewalevin/homebrew-qwikgit/main/scripts/qwikgit.sh | shasum -a 256
 ```
 
 ## Install 
 
 ```bash
-brew tap andrewalevin/qwhawk
+brew tap andrewalevin/qwikgit
 
-brew install qwhawk
+brew install qwikgit
 ```
 
 
