@@ -18,6 +18,7 @@ EOF
 }
 
 show_version() {
+  echo "Qwik Git Version: ";
   BREW_INFO=$(brew info qwikgit)
   echo "$BREW_INFO";
 }
@@ -39,10 +40,6 @@ commit_and_push() {
   git commit -m "$COMMIT_MESSAGE"
   git push
 }
-
-echo "🍉 Version: ";
-show_version;
-
 
 case "$1" in
   -h|--help) show_help; exit 0 ;;
