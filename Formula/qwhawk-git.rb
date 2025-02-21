@@ -3,7 +3,7 @@ class AwlGit < Formula
   homepage "https://github.com/andrewalevin/homebrew-qwhawk"
   url "https://raw.githubusercontent.com/andrewalevin/homebrew-qwhawk/main/scripts/qwhawk-git.sh"
   version "1.0.0"
-  sha256 "e443d9c6c666f983f8155334efb87af2ea7b9f4559f63cd5ae40b665f5af5f29"
+  sha256 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 
   def install
     bin.install "qwhawk-git.sh" => "qw"
