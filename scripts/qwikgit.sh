@@ -1,9 +1,6 @@
 #!/bin/bash
 
 SCRIPT_NAME="qwikgit"
-VERSION="DEV"  # <- This will be replaced by Homebrew at install time
-
-
 
 show_help() {
   cat <<EOF
@@ -21,7 +18,8 @@ EOF
 }
 
 show_version() {
-  echo "$SCRIPT_NAME version $VERSION"
+  BREW_INFO=$(brew info qwikgit)
+  echo "$BREW_INFO";
 }
 
 commit_and_push() {
