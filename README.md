@@ -1,4 +1,4 @@
-# homebrew-qwhawk
+# Homebrew. Qwik Git 
 homebrew-qwhawk
 
 
@@ -19,6 +19,7 @@ brew tap andrewalevin/qwhawk
 
 brew install qwhawk
 ```
+
 
 
 
