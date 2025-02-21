@@ -3,12 +3,11 @@
 DATE=$(date +"%Y-%m-%d %T %N")
 
 # Check if arguments are passed
+COMMIT_MESSAGE="$DATE"
 if [ $# -gt 0 ]; then
   # If arguments are passed, concatenate them after the date
-  COMMIT_MESSAGE="$DATE $*"
-else
-  # If no arguments, just use the date
-  COMMIT_MESSAGE="$DATE"
+  echo "With arguments = [$*]"
+  COMMIT_MESSAGE="$COMMIT_MESSAGE $*"
 fi
 
 git add .
