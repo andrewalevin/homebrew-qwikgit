@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DATE=$(date +"%Y-%m-%d %T %N")
+DATE=$(date +"%Y-%m-%d %T")
 
 # Check if arguments are passed
 COMMIT_MESSAGE="$DATE"
