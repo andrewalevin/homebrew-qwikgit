@@ -1,4 +1,4 @@
-class Qwik < Formula
+class Qwikgit < Formula
   desc "Git auto-commit and push with timestamp"
   homepage "https://github.com/andrewalevin/homebrew-qwikgit"
   url "https://raw.githubusercontent.com/andrewalevin/homebrew-qwikgit/main/scripts/qwikgit.sh"
