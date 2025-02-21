@@ -1,4 +1,4 @@
-class AwlGit < Formula
+class Qwhawk < Formula
   desc "Git auto-commit and push with timestamp"
   homepage "https://github.com/andrewalevin/homebrew-qwhawk"
   url "https://raw.githubusercontent.com/andrewalevin/homebrew-qwhawk/main/scripts/qwhawk-git.sh"
