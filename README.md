@@ -23,6 +23,15 @@ qw -v, --version      # Show version information
 qw -h, --help         # Show help
 ```
 
+or 
+
+```bash
+12                    # Auto-commit with a timestamp
+12 Fix bug            # Commit with a timestamp and a custom message (works without quotes)
+12 -v, --version      # Show version information
+12 -h, --help         # Show help
+```
+
 ## 🔄 Update
 
 ```bash
