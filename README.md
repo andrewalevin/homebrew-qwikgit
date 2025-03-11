@@ -1,56 +1,52 @@
 # 🍷 Qwik Git Formula for Homebrew 🍺
 
-Qwik Git (`qw`) – это удобный инструмент для автоматического коммита и пуша изменений в Git с временной меткой. Упрощает работу с Git, особенно для быстрого сохранения изменений.
+Qwik Git (`qw`) is a convenient tool for automatically committing and pushing changes to Git with a timestamp. It simplifies working with Git, especially for quickly saving changes.
 
-## 📦 Установка
+## 📦 Installation
 
 ```bash
 brew tap andrewalevin/qwikgit
 brew install qwikgit
 ```
 
-## 🚀 Использование
+## 🚀 Usage
 
 ```bash
-qw                    # Авто-коммит с временной меткой
-qw "Fix bug"         # Коммит с временной меткой и кастомным сообщением
-qw -v, --version      # Показать версию
-qw -h, --help         # Показать справку
+qw                    # Auto-commit with a timestamp
+qw Fix bug            # Commit with a timestamp and a custom message (works without quotes)
+qw -v, --version      # Show version information
+qw -h, --help         # Show help
 ```
 
-## 🔄 Обновление
+## 🔄 Update
 
 ```bash
 brew upgrade qwikgit
 ```
 
-## 🛠 Как публиковать новую версию
+## 🛠 Developer Notes: Publishing a New Version
 
-### 1️⃣ Обновите SHA256 чек-сумму нового скрипта
+### Update the SHA256 checksum of the new script
 
 ```bash
 curl -L https://raw.githubusercontent.com/andrewalevin/homebrew-qwikgit/main/scripts/qwikgit.sh | shasum -a 256
 ```
 
-### 2️⃣ Обновите версию в `qwikgit.rb`
+### Update the version in `qwikgit.rb`
 
-В файле `qwikgit.rb` измените версию и вставьте новую SHA256 сумму.
+Modify the `qwikgit.rb` file to reflect the new version and insert the new SHA256 checksum.
 
-### 3️⃣ Пересоберите и протестируйте
+### Rebuild and test
 
 ```bash
 brew reinstall --build-from-source qwikgit
 ```
 
-### 4️⃣ Закоммитьте изменения и запушьте
+### Commit and push changes
 
 ```bash
 git add .
 git commit -m "Release new version X.Y.Z"
 git push
 ```
-
-## 🎨 Лого
-
-Qwik Git использует эмодзи 🍷 в качестве официального логотипа! 😃
 

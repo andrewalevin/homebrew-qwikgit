@@ -13,7 +13,8 @@ Usage:
 
 Examples:
   $SCRIPT_NAME                    # Auto-commit with timestamp
-  $SCRIPT_NAME "Fix bug"           # Commit with timestamp + custom message
+  $SCRIPT_NAME "Fix bug"          # Commit with timestamp + custom message
+  $SCRIPT_NAME Fix bug and build  # Commit with timestamp + custom message + Works without " "
 EOF
 }
 
