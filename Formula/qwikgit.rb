@@ -17,3 +17,4 @@ class Qwikgit < Formula
     assert_match version.to_s, shell_output("#{bin}/qw --version")
   end
 end
+
