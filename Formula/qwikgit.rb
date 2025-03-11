@@ -6,7 +6,8 @@ class Qwikgit < Formula
   sha256 "f57b96391476057c0e544c514a8a1d316e21b18322cf4a5a678a0040cfd9dd56"
 
   def install
-    bin.install "qwikgit.sh" => "12"
+      bin.install "qwikgit.sh" => "qw"
+      bin.install "qwikgit.sh" => "12"
   end
 
   test do
