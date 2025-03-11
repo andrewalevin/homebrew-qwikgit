@@ -11,6 +11,11 @@ brew install qwikgit
 
 ## 🚀 Usage
 
+Once installed, you can run Qwikgit using the following commands:
+•	qw: Runs the qwikgit.
+•	12: An alias that also runs the same qwikgit as qw.
+
+
 ```bash
 qw                    # Auto-commit with a timestamp
 qw Fix bug            # Commit with a timestamp and a custom message (works without quotes)
